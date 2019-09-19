@@ -53,6 +53,23 @@ document.querySelector('.btn-roll').addEventListener('click', function(){
     }
 });
 
+document.querySelector('.btn-hold').addEventListener('click', function(){
+
+    //Add the round score to the total score
+    scores[activePlayer] += roundScoure;
+
+
+
+    //Change on UI the score
+    document.getElementById('score-'+activePlayer).textContent = scores[activePlayer];
+
+
+    //When the game is finished
+
+
+
+});
+
 
 
 //document.querySelector('#current-' + activePlayer).innerHTML = '<em>' + dice + '</em>';
